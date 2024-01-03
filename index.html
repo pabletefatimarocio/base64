@@ -6,10 +6,15 @@
     <title>Image to Base64 Data URL</title>
 </head>
 <body>
-    <input type="file">
+    <input type="file" id="fileInput">
 
     <script>
+     const fileInput = document.getElementById("fileInput");
 
+     fileInput.addEventListener("change", e => {
+        console.log(e);
+     });
+     
     </script>
 </body>
 </html>
